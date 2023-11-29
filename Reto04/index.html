@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta de Producto</title>
+  <link rel="icon" href="/img/k.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <img src="img/kawasaki h2r.jpeg" alt="Producto">
+    <h2 class="product-name">KAWASAKI H2R</h2>
+    <div class="product-info">
+      <p class="product-description">La Ninja H2R es una moto sin igual con soluciones tecnológicas que se extienden 
+        a otras motos dentro de la familia Ninja. La principal es el “supercharger” integrado, diseñado y fabricado
+         al 100% por Kawasaki, equipado con una turbina que, a máximas revoluciones, rompe realmente la velocidad 
+         del sonido. La Kawasaki H2R tiene una potencia máxima de 310 caballos de fuerza.
+      <a href="https://www.kawasaki.es/es/about_kawasaki" target="_blank"><button class="oval-button" id="verMas">Ver más</button></a>
+      </p>
+    </div>
+    <p class="product-price">Precio: $224,272.20 Soles </p>
+    <button class="buy-button oval-button" id="comprar">Comprar</button>
+  </div>
+
+  <script>
+    const buyButton = document.getElementById('comprar');
+
+    buyButton.addEventListener('click', () => {
+      alert('¡Compra exitosa!');
+    });
+
+    const verMasButton = document.getElementById('verMas');
+    animateBorderColor(verMasButton);
+  </script>
+</body>
+</html>
